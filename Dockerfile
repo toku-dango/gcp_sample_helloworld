@@ -9,8 +9,9 @@ COPY requirements.txt ./requirements.txt
 RUN pip install -r requirements.txt
 COPY . .
 
-ENV FLASK_APP src/app.py
+ENV FLASK_APP src/main.py
 
+ENV PORT 8080
 EXPOSE 8080
 
-CMD ["python", "src/app.py"]
+CMD ["python", "src/main.py"]
