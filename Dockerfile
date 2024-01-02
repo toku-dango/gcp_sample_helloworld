@@ -9,7 +9,7 @@ COPY requirements.txt ./requirements.txt
 RUN pip install -r requirements.txt
 COPY . .
 
-ENV FLASK_APP /app/src/app.py
+ENV FLASK_APP src/app.py
 
 EXPOSE 8080
 
